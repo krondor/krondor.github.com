@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://missionpenguin.com
-title: Inserting Penguins One Step at Time 
-subtitle: A blogging framework for hackers.
+title: missionpenguin.com 
+subtitle: slowly turning to penguins
 author: Ryan Kather
 simple_search: http://google.com/search
 description:
@@ -64,7 +64,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: krondor
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
@@ -72,7 +72,7 @@ twitter_show_follower_count: false
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true 
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -93,7 +93,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-2598242-1
 
 # Facebook Like
 facebook_like: false
