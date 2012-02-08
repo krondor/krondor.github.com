@@ -57,6 +57,11 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 #   3rd Party Settings    #
 # ----------------------- #
 
+# Google Plus Profile
+# Hidden: No visible button, just add author information to search results
+googleplus_user: 110157564326709780111
+googleplus_hidden: false
+
 # Github repositories
 github_user: krondor
 github_repo_count: 2
@@ -74,11 +79,6 @@ twitter_tweet_button: true
 # Google +1
 google_plus_one: true 
 google_plus_one_size: medium
-
-# Google Plus Profile
-# Hidden: No visible button, just add author information to search results
-googleplus_user: 110157564326709780111
-googleplus_hidden: false
 
 # Pinboard
 pinboard_user:
