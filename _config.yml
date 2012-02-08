@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
+url: http://missionpenguin.com
+title: Inserting Penguins One Step at Time 
 subtitle: A blogging framework for hackers.
-author: Your Name
+author: Ryan Kather
 simple_search: http://google.com/search
 description:
 
