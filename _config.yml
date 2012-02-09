@@ -3,11 +3,11 @@
 # ----------------------- #
 
 url: http://missionpenguin.com
-title: missionpenguin.com 
+title: missionpenguin 
 subtitle: slowly turning to penguins
 author: Ryan Kather
 simple_search: http://google.com/search
-description:
+description: Ryan Kather's blog on his various geek interests.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
