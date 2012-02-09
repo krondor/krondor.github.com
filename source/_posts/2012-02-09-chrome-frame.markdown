@@ -3,13 +3,13 @@ layout: post
 title: "chrome frame"
 date: 2012-02-09 15:27
 comments: true
-categories: [ocotopress, chromeframe, blog, howto] 
+categories: [ocotopress, chromeframe, blog, howto, markotto, config.yml, chromium, liquid] 
 ---
 So having spent some time fumbling around in <a href="http://octopress.org">octopress</a>, I've made my first modification.  Internet Explorer is a constant source of pain when theming websites.  As this is my personal blog there isn't really a reason to be particularly friendly to Internet Explorer, and so I thought why not prompt my visitors to install <a href="http://code.google.com/chrome/chromeframe/">Chrome Frame</a>.
 
 Chrome Frame effectively replaces the rendering engine of IE with Google Chrome through a plugin for IE.  In effect users who install it are now running Chrome, and as such are treated with properly working CSS/HTML5/JS support.  Which now means they can see my nicely rendered 3D logo all in CSS courtesy of <a href="http://www.markdott.com/2011/01/05/3d-text-using-just-css/">Mark Otto</a>.  Wondeful, but how to get my visitors to install Chrome Frame?
 
-<!--- more --> 
+<!-- more --> 
 
 Once Chrome Frame has been installed the user-agent header can report its presence.
 
@@ -49,4 +49,4 @@ Success! My IE visitors will now be greated with an overlay prompt enticing them
 
 {% img /images/chrome_frame_overlay.png %}
 
-Now if only they'd install it (or even better just get a full Chrome or Firefox browser in the first place).
+Now if only they'd install it (or even better just get a full Chrome or Firefox browser in the first place).  Most importantly I learned how to control a feature of my site by manipulating _config.yml and custom overrides to the stock templates.  Fun times!
