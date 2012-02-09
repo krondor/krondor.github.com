@@ -59,7 +59,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user: 110157564326709780111
+googleplus_user: 110157564326709780111 
 googleplus_hidden: false
 
 # Github repositories

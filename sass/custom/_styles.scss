@@ -1,2 +1,5 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+body > header h1 a, body > header h1 a:visited, body > header h1 a:hover {
+   text-shadow: 2px 2px 2px rgba(0,0,0,0.4)
+}
