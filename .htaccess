@@ -1,0 +1,21 @@
+ExpiresActive On
+ExpiresDefault A3600
+
+# Expire 1 Month
+<FilesMatch "\.(ico|gif|jpe?g|png|flv|pdf|swf|mov|mp3|wmv|ppt)$">
+ExpiresDefault A2419200
+Header append Cache-Control "public"
+</FilesMatch>
+
+# Expire 3 Days
+<FilesMatch "\.(xml|txt|html|htm|js|css)$">
+ExpiresDefault A259200
+Header append Cache-Control "private, must-revalidate"
+</FilesMatch>
+
+# Exclude from Cache
+<FilesMatch "\.(php|cgi|pl)$:>
+ExpiresDefault A0
+Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+Header set Pragma "no-cache"
+</FilesMatch>
