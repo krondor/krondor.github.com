@@ -34,7 +34,13 @@ Now that we have a clause to test against Octopress can decide on whether or not
 
 Now I declare when the code should be included given our config.yml directive using <a href="http://liquidmarkup.orgi">Liquid</a> markup syntax with an if block for site.chromeframe.
 
-I paste in the chrome frame installation script from the Chromium example linked above and modify it for my needs, and we're good to go. I really didn't change much.  I opted to use overlay mode for the prompt because I'm not quite sure where I'd like to inject it inline.  The only issue with overlay (besides annoyance to my visitors), is that it doesn't seem to work on IE7 and earlier.
+I paste in the chrome frame installation script from the Chromium example linked above and modify it for my needs, and we're almost good to go. I really didn't change much.  I opted to use overlay mode for the prompt because I'm not quite sure where I'd like to inject it inline.  The only issue with overlay (besides annoyance to my visitors), is that it doesn't seem to work on IE7 and earlier.  I insert a <meta> to the head to enable chrome frame for my pages content (this would normally be done in the http server config, but as I don't have access to that...).  
+
+``` html meta tag to enable chrome frame
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+```
+
+Giving us the final product of...
 
 {% include_code [final customized head.html with modifications] head.html %}
 
