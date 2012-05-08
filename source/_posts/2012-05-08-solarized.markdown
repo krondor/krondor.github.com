@@ -3,7 +3,7 @@ layout: post
 title: "solarized"
 date: 2012-05-08 14:30
 comments: true
-categories: [solarizedi, colors, blog, css, gist]
+categories: [solarized, colors, blog, css, gist]
 ---
 This blog is now <strong><a href="http://ethanschoonover.com/solarized">Solarized!</a></strong>  I made the change today, after having already moved to this color scheme in my shell, editor, etc... I'm really enjoying it on my desktop, so I thought why not the blog?  The color scheme is supposed to help reduce eye strain while maintaining nice contrast of content.  That sounds about right for me, living in this sea of florescent light powered cubicles.  
 
