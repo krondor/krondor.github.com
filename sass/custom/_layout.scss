@@ -19,3 +19,19 @@
 //$sidebar-pad-medium: 15px;
 //$sidebar-pad-wide: 20px;
 //$sidebar-width-wide: 300px;
+
+@webkit-keyframes SLIDE-MOVE {
+	from {
+		background-position: 5% 5%
+	}
+	to {
+		background-position: 1300% 600%
+	}
+}	
+
+#background {
+	-webkit-animation-name: SLIDE-MOVE;
+	-webkit-animation-duration: 200s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}

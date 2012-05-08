@@ -62,3 +62,9 @@ body > footer {
      /* shadow */
      text-shadow: 0 0 0.5em #444;
 }
+.ribbon:hover {
+     background-color: #f00; 
+     -moz-box-shadow: 0 0 1em #ffff00;
+     -webkit-box-shadow: 0 0 1em #ffff99;
+
+}
