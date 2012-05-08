@@ -5,11 +5,13 @@
 $header-bg: #fdf6e3;
 $title-color: #FFFFFF;
 $page-bg:  #002b36;
-$footer-bg-back: #eee8d5;
+$footer-bg: #eee8d5;
+$footer-bg-back: linear-gradient($footer-bg, darken($footer-bg, 8));
 $sidebar-bg: #eee8d5;
 $main-bg: #fdf6e3;
 $subtitle-color: #93a1a1;
 $text-color: #657b83;
+$text-color-light: #839496;
 $title-color: #586e75;
 
 //$header-bg: #263347;
