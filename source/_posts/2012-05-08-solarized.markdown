@@ -3,7 +3,7 @@ layout: post
 title: "solarized"
 date: 2012-05-08 14:30
 comments: true
-categories: [solarized, colors, blog, css, gist]
+categories: [solarized, colors, blog, css, gist, octopress]
 ---
 {% img right /images/solarize_things.jpg %}
 

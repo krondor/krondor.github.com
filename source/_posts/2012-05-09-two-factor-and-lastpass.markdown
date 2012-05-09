@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "two factor and lastpass"
-date: 2012-05-08 12:43
+date: 2012-05-09 12:43
 comments: true
 published: false
 categories: [passwords, security, lastpass, mfa, blog]
