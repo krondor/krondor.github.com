@@ -18,6 +18,8 @@ Chances are you are not doing at least a few of the points above.  Which is why 
 
 {% img /images/LastPassLogo329x40.png %}
 
+So what makes LastPass so good?
+
 Like any good password manager, LastPass holds the keys to your life in an encrypted vault.  You manage entries in the vault and lock it with a master password.  This is all par for the course as these things go, and don't necessarily stand out on their own.  However, the means with which LastPass does this does differ significantly from many password managers.  LastPass syncs your vault to their online service.  
 
 That is a scary statement, and immediately had me worried when I saw the service.  How can I trust that their backend is secure?  If it worries you to have your password vault propagated across the Internet, don't worry it means your self preservation instinct is working correctly.  LastPass works around this basic issue of trust through the use of a <a href="http://en.wikipedia.org/wiki/Salt_%28cryptography%29">salted hash</a>.  Effectively this means that passwords and form data you populate into your vault, are encryptd client side and only the resultant hash with salt is sent to their online system.  LastPass doesn't know the vault contents of its users only the hashes.  
