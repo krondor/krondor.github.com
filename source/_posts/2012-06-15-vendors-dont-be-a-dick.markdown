@@ -1,0 +1,124 @@
+---
+layout: post
+title: "vendors: don't be a dick"
+date: 2012-06-15 10:29
+comments: true
+published: false
+categories: [blog, rant, vendors, it] 
+---
+This post is probably going to feel a bit *ranty* and may have a bit of
+ profanity, so if that annoys you I apologize and you might want to read
+ something else for a bit.  
+
+**Vendors, I'm calling you out!  Stop being dicks!**^TM
+
+Don't get me wrong, I understand you can't run an IT endeavor without the
+ vendors.  Even if you have a crack team it's all but inevitable.  You're going
+ to run into some industry specific software, audit requirement, or the like
+ that will force you to engage a vendor.  Do we really know everything about 
+ every niche solution the organization requires?  The entire thing can't 
+ effectively be DIY.  When dealing with vendors though, it's important to know 
+ that they are not your friend, and can actually be harmful.
+
+{% pullquote %}
+I've been in the field a long time, and I've seen a lot of things.  I've
+ seen vendors attempt to bribe employees (fail and succeed).  I've seen vendors 
+ outright lie about their features or competitors.  Vendors have circumvented
+ business processes for procurement.  They've harassed employees, sabotaged 
+ careers, and even bypassed whole departments.  {"It's a cut throat world, but 
+ here's a tip; if you're doing those shady things your time working with me will
+ be short."}
+{% endpullquote %}
+
+<!-- more -->
+
+###Let's Talk About Joe###
+
+I once worked for a place where we had a fake employee named Joe.  He had a 
+ voicemail and email address.  If you cold called us for sales, we would
+ transfer you to Joe.  The IT director would review the calls and emails on
+ occasion, but generally ignore most of the noise.  One day, after directing a
+ call to Joe, we receive a call back.  The guy on the other end proceeds to tell
+ us how Joe loved the idea of their product and asked what the next step was to
+ cutting that PO.
+
+->*Granted, fake employees make that sales job harder and might encourage this*<-
+
+###The Case of the Jogging CFO###
+
+Once upon a time I was doing an in depth assessment of various spam filtering
+ solutions.  I had built an in house box off of [Gentoo](http://gentoo.org),
+ [SpamAssassin](http://spamassassin.apache.org/), [Amavisd-new](http://www.ijs.si/software/amavisd/),
+ [Postfix](http://www.postfix.org), etc... and was comparing it against most
+ of the industry leaders.  I was piping real spam we had received and real
+ legitimate mail through each solution and comparing accuracy metrics. Upon the
+ test conclusion, I informed the vendors that we were proceeding with our in
+ house solution because it was more accurate than most of their offerings and
+ cheaper.  The vendor lived near our CFO and saw him jogging one Sunday morning.
+ He ran out of his house, ran down the CFO and proceeded to tell him what a
+ horrible mistake we were making and how we were going to cost them a fortune
+ and loss of brand reputation.  The CFO queried me on the  incident and after
+ showing him our test methodology and results, that vendor made it to our
+ blacklist of companies to never do business with.
+
+###Churning about in the Rumor Mill###
+
+In another instance, a particular vendor had the ear of a certain CTO. 
+ When the vendors bid on a project appeared to be losing favor for a competing
+ solution, the vendor began to spread some rumors like, "a key IT engineer was
+ interviewing with a competitor", and subsequently "his recommendations should
+ be suspect due to said interviews". The CTO in this case, chose to error on the
+ side of caution removing the engineer from the project.  The vendor did not win
+ the bid.  
+
+IT is an incestuous industry, and we all share connections.  It's easy
+ for rumors to circulate and can be quite damaging.
+
+###They don't support Syslog###
+
+A final story of a vendor, in this case spreading misinformation.  In another
+ engagement several vendors were being considered for a solution.  One vendor
+ was quite aggressive and had learned who the competing company was in the bid. 
+ Armed with this information the vendor began to spread [FUD](http://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt)
+ about the competition.  It started simple enough, did you see these earning
+ statements?  What about this whitepaper or study?  How about this key employee
+ leaving for greener pastures?  Eventually culminating in lies, in this case 
+ the product does not support syslog.  A quick check of the website features
+ list would have debunked that quickly, let alone our test process, or interviews
+ with other customers.  
+
+I could go on as I'm sure many of you have your own stories.  For the sake of 
+ brevity let's move forward.  What does it all mean?
+
+###So Vendors Are Evil?###
+
+Vendor's aren't evil per se, but they're not your friend either.  A lot of my
+ colleagues live by their vendors.  They're fanboys and girls for a product.  I
+ get it, you've invested time and effort in that product.  It's human nature for
+ bias on something you've become vested (see the excellent [Anatomy of a Fanboy](http://blog.testfreaks.com/information/anatomy-fanboy/) post.  
+ You've certified, justified the use and need, and maybe things have gone well
+ for you. Vendors can be helpful.  They brought in resources to train you, they
+ helped with the deployment, and they've held your hand and given you comfort.
+ If something were to break, you have a _neck to wring_ as the saying goes. You 
+ can even make a good career on backing your vendor.  There's also something to
+ be said for that healthy working relationship.
+
+Let's not kid ourselves though, there's no altruism here.  They're out to make 
+ a profit.  At the moment you're profitable, but as you stress that relation
+ maybe they're not so engaging and helpful.  Perhaps the account manager is 
+ focused on the long term and not worried about how much resources they're 
+ investing, but perhaps not. 
+
+My advise to the IT professional is this.  Don't be a puppet.  Stop making
+ excuses for a vendor deficiency and own it.  Deal with it, and move on.  Keep
+ in mind that vendor has a focus on profit, and don't be afraid to test
+ that relationship and compare to other solutions.  View vendors as providing a
+ service.  You want to hold the keys and you should dictate the terms.  It's not
+ about hurting feelings, it's about business.  
+
+My advise to the vendors is this.  Let your product stand on its own.  Show me
+ your value without resorting to the things above, and if you can't deliver on a
+ requirement tell me.  I'd rather know what I'm getting into ahead of time, than
+ hate our relationship down the road.  Losing one bullet point in a comparison
+ matrix does not mean we won't pick your solution.  However, misrepresenting
+ the solution or resorting to nastiness will guarantee a seat on the loser pile.
