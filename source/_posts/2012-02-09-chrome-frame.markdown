@@ -3,7 +3,7 @@ layout: post
 title: "chrome frame"
 date: 2012-02-09 15:27
 comments: true
-categories: [ocotopress, chromeframe, blog, howto, markotto, config.yml, chromium, liquid] 
+categories: [octopress, chromeframe, blog, howto, markotto, config.yml, chromium, liquid] 
 ---
 So having spent some time fumbling around in <a href="http://octopress.org">octopress</a>, I've made my first modification.  Internet Explorer is a constant source of pain when theming websites.  As this is my personal blog there isn't really a reason to be particularly friendly to Internet Explorer, and so I thought why not prompt my visitors to install <a href="http://code.google.com/chrome/chromeframe/">Chrome Frame</a>.
 

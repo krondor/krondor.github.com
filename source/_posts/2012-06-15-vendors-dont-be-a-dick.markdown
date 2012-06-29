@@ -3,14 +3,13 @@ layout: post
 title: "vendors: don't be a dick"
 date: 2012-06-15 10:29
 comments: true
-published: false
 categories: [blog, rant, vendors, it] 
 ---
 This post is probably going to feel a bit *ranty* and may have a bit of
  profanity, so if that annoys you I apologize and you might want to read
  something else for a bit.  
 
-**Vendors, I'm calling you out!  Stop being dicks!**^TM
+**Vendors, I'm calling you out!  Stop being dicks!**
 
 Don't get me wrong, I understand you can't run an IT endeavor without the
  vendors.  Even if you have a crack team it's all but inevitable.  You're going
@@ -95,7 +94,7 @@ I could go on as I'm sure many of you have your own stories.  For the sake of
 Vendor's aren't evil per se, but they're not your friend either.  A lot of my
  colleagues live by their vendors.  They're fanboys and girls for a product.  I
  get it, you've invested time and effort in that product.  It's human nature for
- bias on something you've become vested (see the excellent [Anatomy of a Fanboy](http://blog.testfreaks.com/information/anatomy-fanboy/) post.  
+ bias on something you've become vested (see the excellent [Anatomy of a Fanboy](http://blog.testfreaks.com/information/anatomy-fanboy/) post).  
  You've certified, justified the use and need, and maybe things have gone well
  for you. Vendors can be helpful.  They brought in resources to train you, they
  helped with the deployment, and they've held your hand and given you comfort.
