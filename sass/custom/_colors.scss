@@ -1,5 +1,6 @@
 // Here you can easily change your sites's color scheme.
-// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
+// To give it a try, uncomment some of the lines below rebuild your blog, and 
+// see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
 $header-bg: #fdf6e3;
@@ -13,7 +14,8 @@ $text-color: #657b83;
 $text-color-light: #839496;
 $footer-bg-back: linear-gradient($footer-bg, darken($footer-bg, 8));
 
-/* To use the light Solarized highlighting theme uncomment the following line */
+/* To use the Solarized highlighting theme uncomment the following line and set
+ light or dark parameter*/
 $solarized: dark;
 
 /* If you want to tweak the Solarized colors you can do that here */

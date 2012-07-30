@@ -17,23 +17,31 @@ body > header h1 a, body > header h1 a:visited, body > header h1 a:hover {
 		0 20px 20px rgba(0,0,0,.15);
 }
 #main {
+     -ms-box-shadow: 3px 3px 4px #000;
      -moz-box-shadow: 3px 3px 4px #000;
      -webkit-box-shadow: 3px 3px 4px #000;
+     -o-box-shadow: 3px 3px 4px #000;
      box-shadow: 3px 3px 4px #000;
 }
 body > header {
+     -ms-box-shadow: 3px 3px 4px #000;
      -moz-box-shadow: 3px 3px 4px #000;
      -webkit-box-shadow: 3px 3px 4px #000;
+     -o-box-shadow: 3px 3px 4px #000;
      box-shadow: 3px 3px 4px #000;
 }
 nav {
+     -ms-box-shadow: 3px 3px 4px #000;
      -moz-box-shadow: 3px 3px 4px #000;
      -webkit-box-shadow: 3px 3px 4px #000;
+     -o-box-shadow: 3px 3px 4px #000;
      box-shadow: 3px 3px 4px #000;
 }
 body > footer {
+     -ms-box-shadow: 3px 3px 4px #000;
      -moz-box-shadow: 3px 3px 4px #000;
      -webkit-box-shadow: 3px 3px 4px #000;
+     -o-box-shadow: 3px 3px 4px #000;
      box-shadow: 3px 3px 4px #000;
 }
 .ribbon {
@@ -44,11 +52,17 @@ body > footer {
      right: -1.3em;
      top: 2.5em;
      /* 45 deg ccw rotation */
+     transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
      -moz-transform: rotate(45deg);
      -webkit-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
      /* shadow */
+     box-shadow: 0 0 1em #888;
+     -ms-box-shadow: 0 0 1em #888;
      -moz-box-shadow: 0 0 1em #888;
      -webkit-box-shadow: 0 0 1em #888;
+     -o-box-shadow: 0 0 1em #888;
 }
 .ribbon a {
      border: 1px solid #faa;
@@ -64,7 +78,10 @@ body > footer {
 }
 .ribbon:hover {
      background-color: #f00; 
+     box-shadow: 0 0 1em #ffff00;
+     -ms-box-shadow: 0 0 1em #ffff00;
      -moz-box-shadow: 0 0 1em #ffff00;
-     -webkit-box-shadow: 0 0 1em #ffff99;
+     -webkit-box-shadow: 0 0 1em #ffff00;
+     -o-box-shadow: 0 0 1em #ffff00;
 
 }
