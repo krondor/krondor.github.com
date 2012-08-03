@@ -21,7 +21,8 @@ How secure is your password?  If we've learned anything over the years on the
 Chances are you are not doing at least a few of the points above.  Which is why
  for years I've been an advocate of password managers.  I'm presently using
  [LastPass](http://lastpass.com), which is the genesis for this post.  I've
- used quite a few of these in my day (most recently [kwallet](http://docs.kde.org/stable/en/kdeutils/kwallet/index.html)
+ used quite a few of these in my day (most recently 
+ [kwallet](http://docs.kde.org/stable/en/kdeutils/kwallet/index.html)
  and [KeePassX](http://keepassx.org).  Some are better than others, but almost
  any is better than nothing.  LastPass, however, has particularly impressed me.
   So what makes it so special, and how can it help keep us more secure?
@@ -72,8 +73,9 @@ That is a scary statement, and immediately had me worried when I saw the
  service.  How can I trust that their backend is secure?  If it worries you to
  have your password vault propagated across the Internet, don't worry it means
  your self preservation instinct is working correctly.  LastPass works around
- this basic issue of trust through the use of a [salted hash](http://en.wikipedia.org/wiki/Salted_hash).
-  Effectively this means that passwords and form data you populate into your
+ this basic issue of trust through the use of a 
+ [salted hash](http://en.wikipedia.org/wiki/Salted_hash).
+ Effectively this means that passwords and form data you populate into your
  vault, are encrypted client side and only the resultant hash with salt is sent
  to their online system.  LastPass doesn't know the vault contents of its users
  only the hashes. 
@@ -88,7 +90,8 @@ This is an important point because it nullifies one of the biggest issues with
  [popular](http://www.itworld.com/security/249460/hacked-microsoft-online-store-saved-passwords-plain-text)
  sites haven't learned their lesson about storing clear text passwords.  I
  suppose I should also elaborate that the use of a salt is key here.  Even
- passwords that are hashed are vulnerable to [rainbow tables](http://en.wikipedia.org/wiki/Rainbow_table),
+ passwords that are hashed are vulnerable to 
+ [rainbow tables](http://en.wikipedia.org/wiki/Rainbow_table),
  and these are increasingly pre-generated for the taking.  The salt nullifies
  this leaving the stolen password vault only vulnerable to the venerable (and
  much more time consuming) offline dictionary attack.
@@ -124,11 +127,13 @@ The security mechanisms in place around your password vault are all well and
  your vault, and it's really easy to check that remember my password button. 
  Sure you've got a password on your workstation, laptop, and phone right? 
  Maybe, it's not the remember my password button, but the keylogger on the
- malware you didn't know you had?  You've patched [flash](http://www.forbes.com/sites/adriankingsleyhughes/2012/05/06/emergency-flash-update-fixes-security-vulnerability-used-to-hijack-windows-pcs/)
+ malware you didn't know you had?  You've patched [
+ flash](http://www.forbes.com/sites/adriankingsleyhughes/2012/05/06/emergency-flash-update-fixes-security-vulnerability-used-to-hijack-windows-pcs/)
  recently right?
 
 There needs to be another barrier on your online identity, and LastPass has you
- covered.  [Multi-factor authentication](http://en.wikipedia.org/wiki/Multi-factor_authentication)
+ covered.
+ [Multi-factor authentication](http://en.wikipedia.org/wiki/Multi-factor_authentication)
  provides that second level of authentication to make the system that much
  harder to compromise.  LastPass has included support for a variety of
  additional authentication mechanisms.  Yubikey, Google Authenticator, and USB
@@ -144,8 +149,10 @@ Multi-factor can be a pain, but it's an additional piece of mind that puts a
  significant hacking targets (government, banking, online game platforms
  (steam, battle.net)) you'll note a generally strong uptake of multi-factor
  authentication.  This is because it is quite effective (although that didn't
- stop the [RSA hack](http://www.schneier.com/blog/archives/2011/08/details_of_the.html),
- but that's a different discussion).  [Mobile authenticators on smartphones](https://code.google.com/p/google-authenticator/),
+ stop the 
+ [RSA hack](http://www.schneier.com/blog/archives/2011/08/details_of_the.html),
+ but that's a different discussion).
+ [Mobile authenticators on smartphones](https://code.google.com/p/google-authenticator/),
  [USB keys](http://helpdesk.lastpass.com/security-options/sesame-multifactor-authentication-with-a-usb-thumb-drive/) (*premium feature*),
  [NFC](http://www.yubico.com/yubikey-neo), and the like have done a great deal
  to make this accessible and easy to live with for everyday usage.  A word of
