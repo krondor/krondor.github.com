@@ -94,7 +94,7 @@ I could go on as I'm sure many of you have your own stories.  For the sake of
 Vendor's aren't evil per se, but they're not your friend either.  A lot of my
  colleagues live by their vendors.  They're fanboys and girls for a product.  I
  get it, you've invested time and effort in that product.  It's human nature for
- bias on something you've become vested (see the excellent [Anatomy of a Fanboy](http://blog.testfreaks.com/information/anatomy-fanboy/) post).  
+ bias on something you've become vested (see the excellent [Anatomy of a Fanboy](http://blog.testfreaks.com/information/anatomy-fanboy/) post). 
  
 You've certified, justified the use and need, and maybe things have gone well
  for you. Vendors can be helpful.  They brought in resources to train you, they
