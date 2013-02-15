@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: career | missionpenguin]]></title>
+  <link href="http://krondor.github.com/blog/categories/career/atom.xml" rel="self"/>
+  <link href="http://krondor.github.com/"/>
+  <updated>2013-02-15T16:55:49-05:00</updated>
+  <id>http://krondor.github.com/</id>
+  <author>
+    <name><![CDATA[Ryan Kather]]></name>
+    <email><![CDATA[rkather@missionpenguin.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[So Long IT, Except Not Really]]></title>
+    <link href="http://krondor.github.com/blog/2013/02/15/so-long-it-except-not-really/"/>
+    <updated>2013-02-15T13:59:00-05:00</updated>
+    <id>http://krondor.github.com/blog/2013/02/15/so-long-it-except-not-really</id>
+    <content type="html"><![CDATA[<p>Wow! How long has it been since I last posted?  It's been a hectic half year,
+and now it's time for a little introspection.  I've changed careers, in a sense,
+to embark on some new things.  For those of you who don't know me, I've spent a
+long time in the trenches of enterprise IT.  It's been fun and rewarding, and by
+no means a bad experience.  That being said I have noticed myself growing a bit
+stir crazy of late.</p>
+
+<p>So, what am I doing exactly?  While I've left my role as an IT Architect and
+moved to the dark side.  That is Software Development, although I'm still doing
+IT to an extent.  I've always worn multiple hats, so why should this be any
+different.</p>
+
+<p>It will be interesting to be on the other side of the IT/Software relationship
+though.  I expect I'll have a good deal more to say on that dichotomy...</p>
+
+<p>In the meantime, I'm hoping to get some posts out on some of the things I've
+been playing with lately.  Should be some fun things to talk about around
+Hadoop, R, MongoDB, Moodle, Juju, and MaaS.  That is if I ever find more time.</p>
+]]></content>
+  </entry>
+  
+</feed>

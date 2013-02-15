@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: css | missionpenguin]]></title>
+  <link href="http://krondor.github.com/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://krondor.github.com/"/>
+  <updated>2013-02-15T16:55:49-05:00</updated>
+  <id>http://krondor.github.com/</id>
+  <author>
+    <name><![CDATA[Ryan Kather]]></name>
+    <email><![CDATA[rkather@missionpenguin.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[solarized]]></title>
+    <link href="http://krondor.github.com/blog/2012/05/08/solarized/"/>
+    <updated>2012-05-08T14:30:00-04:00</updated>
+    <id>http://krondor.github.com/blog/2012/05/08/solarized</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/solarize_things.jpg"></p>
+
+<p>This blog is now <strong><a href="http://ethanschoonover.com/solarized">Solarized!</a></strong>.  I made
+ the change today, after having already moved to this color scheme in my shell,
+ editor, etc... I'm really enjoying it on my desktop, so I thought why not the
+ blog?  The color scheme is supposed to help reduce eye strain while maintaining
+ nice contrast of content.  That sounds about right for me, living in this sea of
+ florescent light powered cubicles.</p>
+
+<p>I elected to use the light variant of solarized for the blog content and scheme
+ and use the dark solarized variant for code snippets.  I think it's working out
+ kind of well, but probably needs some tweaks.</p>
+
+<p>The link above has all the gory details, whereas I'll keep this post a short one
+ and just dump out the gist of the color scheme's SASS CSS.</p>
+
+<p><div><script src='https://gist.github.com/2638348.js?file=_colors.scss'></script>
+<noscript><pre><code>$header-bg: #fdf6e3;
+$page-bg:  #002b36;
+$footer-bg: #eee8d5;
+$sidebar-bg: #eee8d5;
+$main-bg: #fdf6e3;
+$title-color: #586e75;
+$subtitle-color: #93a1a1;
+$text-color: #657b83;
+$text-color-light: #839496;
+$footer-bg-back: linear-gradient($footer-bg, darken($footer-bg, 8));
+
+/* To use the light Solarized highlighting theme uncomment the following line */
+$solarized: dark;
+</code></pre></noscript></div>
+</p>
+
+<p>Happy Hacking!</p>
+]]></content>
+  </entry>
+  
+</feed>

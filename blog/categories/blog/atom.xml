@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | missionpenguin]]></title>
+  <link href="http://krondor.github.com/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://krondor.github.com/"/>
+  <updated>2013-02-15T16:55:49-05:00</updated>
+  <id>http://krondor.github.com/</id>
+  <author>
+    <name><![CDATA[Ryan Kather]]></name>
+    <email><![CDATA[rkather@missionpenguin.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[So Long IT, Except Not Really]]></title>
+    <link href="http://krondor.github.com/blog/2013/02/15/so-long-it-except-not-really/"/>
+    <updated>2013-02-15T13:59:00-05:00</updated>
+    <id>http://krondor.github.com/blog/2013/02/15/so-long-it-except-not-really</id>
+    <content type="html"><![CDATA[<p>Wow! How long has it been since I last posted?  It's been a hectic half year,
+and now it's time for a little introspection.  I've changed careers, in a sense,
+to embark on some new things.  For those of you who don't know me, I've spent a
+long time in the trenches of enterprise IT.  It's been fun and rewarding, and by
+no means a bad experience.  That being said I have noticed myself growing a bit
+stir crazy of late.</p>
+
+<p>So, what am I doing exactly?  While I've left my role as an IT Architect and
+moved to the dark side.  That is Software Development, although I'm still doing
+IT to an extent.  I've always worn multiple hats, so why should this be any
+different.</p>
+
+<p>It will be interesting to be on the other side of the IT/Software relationship
+though.  I expect I'll have a good deal more to say on that dichotomy...</p>
+
+<p>In the meantime, I'm hoping to get some posts out on some of the things I've
+been playing with lately.  Should be some fun things to talk about around
+Hadoop, R, MongoDB, Moodle, Juju, and MaaS.  That is if I ever find more time.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[vendors: don't be a dick]]></title>
+    <link href="http://krondor.github.com/blog/2012/06/15/vendors-dont-be-a-dick/"/>
+    <updated>2012-06-15T10:29:00-04:00</updated>
+    <id>http://krondor.github.com/blog/2012/06/15/vendors-dont-be-a-dick</id>
+    <content type="html"><![CDATA[<p>This post is probably going to feel a bit <em>ranty</em> and may have a bit of
+ profanity, so if that annoys you I apologize and you might want to read
+ something else for a bit.</p>
+
+<p><strong>Vendors, I'm calling you out!  Stop being dicks!</strong></p>
+
+<p>Don't get me wrong, I understand you can't run an IT endeavor without the
+ vendors.  Even if you have a crack team it's all but inevitable.  You're going
+ to run into some industry specific software, audit requirement, or the like
+ that will force you to engage a vendor.  Do we really know everything about
+ every niche solution the organization requires?  The entire thing can't
+ effectively be DIY.  When dealing with vendors though, it's important to know
+ that they are not your friend, and can actually be harmful.</p>
+
+<p><span class='pullquote-right' data-pullquote='It&#8217;s a cut throat world, but
+ here&#8217;s a tip; if you&#8217;re doing those shady things your time working with me will
+ be short.'>
+I've been in the field a long time, and I've seen a lot of things.  I've
+ seen vendors attempt to bribe employees (fail and succeed).  I've seen vendors
+ outright lie about their features or competitors.  Vendors have circumvented
+ business processes for procurement.  They've harassed employees, sabotaged
+ careers, and even bypassed whole departments.  It's a cut throat world, but
+ here's a tip; if you're doing those shady things your time working with me will
+ be short.
+</span></p>
+
+<!-- more -->
+
+
+<h3>Let's Talk About Joe</h3>
+
+<p>I once worked for a place where we had a fake employee named Joe.  He had a
+ voicemail and email address.  If you cold called us for sales, we would
+ transfer you to Joe.  The IT director would review the calls and emails on
+ occasion, but generally ignore most of the noise.  One day, after directing a
+ call to Joe, we receive a call back.  The guy on the other end proceeds to tell
+ us how Joe loved the idea of their product and asked what the next step was to
+ cutting that PO.</p>
+
+<p style="text-align:center;"><em>Granted, fake employees make that sales job harder and might encourage this</em></p>
+
+<h3>The Case of the Jogging CFO</h3>
+
+<p>Once upon a time I was doing an in depth assessment of various spam filtering
+ solutions.  I had built an in house box off of <a href="http://gentoo.org">Gentoo</a>,
+ <a href="http://spamassassin.apache.org/">SpamAssassin</a>, <a href="http://www.ijs.si/software/amavisd/">Amavisd-new</a>,
+ <a href="http://www.postfix.org">Postfix</a>, etc... and was comparing it against most
+ of the industry leaders.  I was piping real spam we had received and real
+ legitimate mail through each solution and comparing accuracy metrics. Upon the
+ test conclusion, I informed the vendors that we were proceeding with our in
+ house solution because it was more accurate than most of their offerings and
+ cheaper.  The vendor lived near our CFO and saw him jogging one Sunday morning.
+ He ran out of his house, ran down the CFO and proceeded to tell him what a
+ horrible mistake we were making and how we were going to cost them a fortune
+ and loss of brand reputation.  The CFO queried me on the  incident and after
+ showing him our test methodology and results, that vendor made it to our
+ blacklist of companies to never do business with.</p>
+
+<h3>Churning about in the Rumor Mill</h3>
+
+<p>In another instance, a particular vendor had the ear of a certain CTO.
+ When the vendors bid on a project appeared to be losing favor for a competing
+ solution, the vendor began to spread some rumors like, "a key IT engineer was
+ interviewing with a competitor", and subsequently "his recommendations should
+ be suspect due to said interviews". The CTO in this case, chose to error on the
+ side of caution removing the engineer from the project.  The vendor did not win
+ the bid.</p>
+
+<p>IT is an incestuous industry, and we all share connections.  It's easy
+ for rumors to circulate and can be quite damaging.</p>
+
+<h3>They don't support Syslog</h3>
+
+<p>A final story of a vendor, in this case spreading misinformation.  In another
+ engagement several vendors were being considered for a solution.  One vendor
+ was quite aggressive and had learned who the competing company was in the bid.
+ Armed with this information the vendor began to spread <a href="http://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt">FUD</a>
+ about the competition.  It started simple enough, did you see these earning
+ statements?  What about this whitepaper or study?  How about this key employee
+ leaving for greener pastures?  Eventually culminating in lies, in this case
+ the product does not support syslog.  A quick check of the website features
+ list would have debunked that quickly, let alone our test process, or interviews
+ with other customers.</p>
+
+<p>I could go on as I'm sure many of you have your own stories.  For the sake of
+ brevity let's move forward.  What does it all mean?</p>
+
+<h3>So Vendors Are Evil?</h3>
+
+<p>Vendor's aren't evil per se, but they're not your friend either.  A lot of my
+ colleagues live by their vendors.  They're fanboys and girls for a product.  I
+ get it, you've invested time and effort in that product.  It's human nature for
+ bias on something you've become vested (see the excellent <a href="http://blog.testfreaks.com/information/anatomy-fanboy/">Anatomy of a Fanboy</a> post).</p>
+
+<p>You've certified, justified the use and need, and maybe things have gone well
+ for you. Vendors can be helpful.  They brought in resources to train you, they
+ helped with the deployment, and they've held your hand and given you comfort.
+ If something were to break, you have a <em>neck to wring</em> as the saying goes. You
+ can even make a good career on backing your vendor.  There's also something to
+ be said for that healthy working relationship.</p>
+
+<p>Let's not kid ourselves though, there's no altruism here.  They're out to make
+ a profit.  At the moment you're profitable, but as you stress that relation
+ maybe they're not so engaging and helpful.  Perhaps the account manager is
+ focused on the long term and not worried about how much resources they're
+ investing, but perhaps not.</p>
+
+<p>My advise to the IT professional is this.  Don't be a puppet.  Stop making
+ excuses for a vendor deficiency and own it.  Deal with it, and move on.  Keep
+ in mind that vendor has a focus on profit, and don't be afraid to test
+ that relationship and compare to other solutions.  View vendors as providing a
+ service.  You want to hold the keys and you should dictate the terms.  It's not
+ about hurting feelings, it's about business.</p>
+
+<p>My advise to the vendors is this.  Let your product stand on its own.  Show me
+ your value without resorting to the things above, and if you can't deliver on a
+ requirement tell me.  I'd rather know what I'm getting into ahead of time, than
+ hate our relationship down the road.  Losing one bullet point in a comparison
+ matrix does not mean we won't pick your solution.  However, misrepresenting
+ the solution or resorting to nastiness will guarantee a seat on the loser pile.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[two factor and lastpass]]></title>
+    <link href="http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass/"/>
+    <updated>2012-05-09T12:43:00-04:00</updated>
+    <id>http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass</id>
+    <content type="html"><![CDATA[<p>You need multi-factor authentication.  Passwords are no longer good enough.</p>
+
+<p><span class='pullquote-right' data-pullquote='You shouldn&#8217;t trust your password.  It has probably been
+ compromised.'>
+How secure is your password?  If we've learned anything over the years on the
+ Internet it's this. You shouldn't trust your password.  It has probably been
+ compromised.  Even if it hasn't, you might as well treat it as such.  These
+ are strong words, but it's not an illogical stance to take.  How good are your
+ password practices?  Do you mix case, use alphanumeric characters, spaces, or
+ symbols?  Is your password over 14 characters long?  Do you change them on a
+ regular basis?  Do you recycle them?  Is it based on a dictionary word or
+ known item from your life?
+</span></p>
+
+<p>Chances are you are not doing at least a few of the points above.  Which is why
+ for years I've been an advocate of password managers.  I'm presently using
+ <a href="http://lastpass.com">LastPass</a>, which is the genesis for this post.  I've
+ used quite a few of these in my day (most recently
+ <a href="http://docs.kde.org/stable/en/kdeutils/kwallet/index.html">kwallet</a>
+ and <a href="http://keepassx.org">KeePassX</a>.  Some are better than others, but almost
+ any is better than nothing.  LastPass, however, has particularly impressed me.
+  So what makes it so special, and how can it help keep us more secure?</p>
+
+<!-- more -->
+
+
+<h2>Why LastPass?</h2>
+
+<p><img class="left" src="/images/LastPassLogo329x40.png"></p>
+
+<p>Like any good password manager, LastPass holds the keys to your life in an
+ encrypted vault.  You manage entries in the vault and lock it with a master
+ password.  The vault can generate random passwords for you and assign those
+ to entries.  This is all par for the course as these things go, and don't
+ necessarily stand out on their own.</p>
+
+<p>So what makes LastPass so good;</p>
+
+<ul>
+<li>Cloud Synchronization</li>
+<li>Client Side Encryption</li>
+<li>Multi-factor Authentication Support</li>
+<li>One Time Use Passwords</li>
+<li>Browser Plugin Support (Chrome/Firefox/Internet Explorer/Opera/Safari/Others)</li>
+<li>Multiple Platform Support (Android/iOS/Linux/OSX/Windows/Others)</li>
+<li>More Than Passwords (Form Data/Notes)</li>
+<li>Price (LastPass is free for use outside of mobile clients)</li>
+<li>Password Sharing with Friends</li>
+<li>Import/Export Utilities</li>
+<li>Phishing Protection</li>
+</ul>
+
+
+<p>In particular, the cloud synchronization has been immense.  Knowing that all my
+ computers can utilize the same password vault, across operating systems and
+ browsers has been huge.  With that in place you no longer need to remember
+ your logins, and with that you can generate random passwords uniquely for all
+ sites.  Now you've compartmentalized your exposure.  If someone were to
+ compromise the account you made on that one blog about snorkeling, you wouldn't
+ be at risk that they could use that same password for your bank.  You've
+ mitigated your risk just in this one act.</p>
+
+<p>So that's great but this online synchronization sounds like it might not be
+ that great an idea.</p>
+
+<h3>Cloud Synchronization</h3>
+
+<p>LastPass syncs your vault to their online service.</p>
+
+<p>That is a scary statement, and immediately had me worried when I saw the
+ service.  How can I trust that their backend is secure?  If it worries you to
+ have your password vault propagated across the Internet, don't worry it means
+ your self preservation instinct is working correctly.  LastPass works around
+ this basic issue of trust through the use of a
+ <a href="http://en.wikipedia.org/wiki/Salted_hash">salted hash</a>.
+ Effectively this means that passwords and form data you populate into your
+ vault, are encrypted client side and only the resultant hash with salt is sent
+ to their online system.  LastPass doesn't know the vault contents of its users
+ only the hashes.</p>
+
+<p>This is an important point because it nullifies one of the biggest issues with
+ password based authentication.  The password storage.  You could be the poster
+ child for security password best practices, and when the website you're
+ visiting gets hacked (and left your password cleartext in their database),
+ your password has been compromised.  This sounds trivial, but you might be
+ surprised <a href="http://www.codinghorror.com/blog/gawker-hack-release-notes.html">how</a>
+ <a href="http://www.reddit.com/comments/usqe/reddits_streak_of_bad_luck_continues/cuugl">many</a>
+ <a href="http://www.itworld.com/security/249460/hacked-microsoft-online-store-saved-passwords-plain-text">popular</a>
+ sites haven't learned their lesson about storing clear text passwords.  I
+ suppose I should also elaborate that the use of a salt is key here.  Even
+ passwords that are hashed are vulnerable to
+ <a href="http://en.wikipedia.org/wiki/Rainbow_table">rainbow tables</a>,
+ and these are increasingly pre-generated for the taking.  The salt nullifies
+ this leaving the stolen password vault only vulnerable to the venerable (and
+ much more time consuming) offline dictionary attack.</p>
+
+<p><blockquote><p>"This thing is secure every way you can imagine. And it's simple,"</p><footer><strong>Steve Gibson,</strong> <cite><a href='http://www.youtube.com/watch?v=r9Q_anb7pwg&amp;feature=player_embedded'>Security Now 256: LastPass Security</a></cite></footer></blockquote></p>
+
+<p>So that's a pretty bold statement, and given the context of the conversation on
+ that linked episode I wouldn't put too much weight in that.  However,  it does
+ seem nice that LastPass has a good level of industry analysis and commenting
+ by security folks.  It's not open source, and that takes away a degree of
+ trust in my mind, but the model does seem sound.</p>
+
+<p>Now I should point out that you can accomplish similar ends with other solutions
+ like KeePassX and Dropbox.  However, there is a level of trust in your
+ synchronization mechanism and an ease of use factor to consider.  Dropbox, in
+ particular, hasn't had a stellar <a href="http://blog.dropbox.com/?p=821">security record</a>.
+ There are other options (some of them <a href="https://www.box.com/">more secure</a>),
+ but with them you may incur costs or complexity which directly impacts the
+ platforms and sync options you have.</p>
+
+<p>I could probably go on, but let's get to the next point.</p>
+
+<h3>Multi-factor authentication</h3>
+
+<p>The security mechanisms in place around your password vault are all well and
+ good, but they're not enough.  The vault can still be attacked, and now that
+ it's online and synchronized between all the computers and mobile devices you
+ won means its <strong>much</strong> more exposed.  In fact, a more likely hacking avenue,
+ might not be a dictionary attack against your vault.  It's easy to become lazy
+ and security can be annoying.  It's a PITA to always have to authenticate to
+ your vault, and it's really easy to check that remember my password button.
+ Sure you've got a password on your workstation, laptop, and phone right?
+ Maybe, it's not the remember my password button, but the keylogger on the
+ malware you didn't know you had?  You've patched <a href="http://www.forbes.com/sites/adriankingsleyhughes/2012/05/06/emergency-flash-update-fixes-security-vulnerability-used-to-hijack-windows-pcs/">
+ flash</a>
+ recently right?</p>
+
+<p>There needs to be another barrier on your online identity, and LastPass has you
+ covered.
+ <a href="http://en.wikipedia.org/wiki/Multi-factor_authentication">Multi-factor authentication</a>
+ provides that second level of authentication to make the system that much
+ harder to compromise.  LastPass has included support for a variety of
+ additional authentication mechanisms.  Yubikey, Google Authenticator, and USB
+ key options exist.  The idea here is that even if your password is compromised
+ attackers would still need to enter the second form of authentication
+ (usually a numeric PIN that changes every 60 seconds), that old adage something
+ you have and something you know.</p>
+
+<p><img src="/images/googleauth_authenticate.png"></p>
+
+<p>Multi-factor can be a pain, but it's an additional piece of mind that puts a
+ significant barrier on your identity theft.  If you look at the most
+ significant hacking targets (government, banking, online game platforms
+ (steam, battle.net)) you'll note a generally strong uptake of multi-factor
+ authentication.  This is because it is quite effective (although that didn't
+ stop the
+ <a href="http://www.schneier.com/blog/archives/2011/08/details_of_the.html">RSA hack</a>,
+ but that's a different discussion).
+ <a href="https://code.google.com/p/google-authenticator/">Mobile authenticators on smartphones</a>,
+ <a href="http://helpdesk.lastpass.com/security-options/sesame-multifactor-authentication-with-a-usb-thumb-drive/">USB keys</a> (<em>premium feature</em>),
+ <a href="http://www.yubico.com/yubikey-neo">NFC</a>, and the like have done a great deal
+ to make this accessible and easy to live with for everyday usage.  A word of
+ caution, you'll note in the screenshot the checkbox to <strong>not require</strong> two
+ factor for this computer.  You can get into the same <em>remember my password</em>
+ quandary with indiscriminate checking of that box.</p>
+
+<p>What's the point of two factor if you disable it?</p>
+
+<h3>Conclusion</h3>
+
+<p><img class="right" src="/images/tryit.jpg"></p>
+
+<p>So I could go on and on about the other nifty things.  Sharing passwords with a
+ friend/spouse/associate without actually giving them the password or access to
+ the vault.  How about, one time use passwords for that time you want to see
+ your vault at Starbucks, but don't trust the computer to not log your
+ keystrokes?  Or how about the on screen keyboard for your password entry
+ (again fighting keyloggers).  Instead, I'll just leave it to this.</p>
+
+<p><strong>LastPass is free and good.  Try it, you'll like it!</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[solarized]]></title>
+    <link href="http://krondor.github.com/blog/2012/05/08/solarized/"/>
+    <updated>2012-05-08T14:30:00-04:00</updated>
+    <id>http://krondor.github.com/blog/2012/05/08/solarized</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/solarize_things.jpg"></p>
+
+<p>This blog is now <strong><a href="http://ethanschoonover.com/solarized">Solarized!</a></strong>.  I made
+ the change today, after having already moved to this color scheme in my shell,
+ editor, etc... I'm really enjoying it on my desktop, so I thought why not the
+ blog?  The color scheme is supposed to help reduce eye strain while maintaining
+ nice contrast of content.  That sounds about right for me, living in this sea of
+ florescent light powered cubicles.</p>
+
+<p>I elected to use the light variant of solarized for the blog content and scheme
+ and use the dark solarized variant for code snippets.  I think it's working out
+ kind of well, but probably needs some tweaks.</p>
+
+<p>The link above has all the gory details, whereas I'll keep this post a short one
+ and just dump out the gist of the color scheme's SASS CSS.</p>
+
+<p><div><script src='https://gist.github.com/2638348.js?file=_colors.scss'></script>
+<noscript><pre><code>$header-bg: #fdf6e3;
+$page-bg:  #002b36;
+$footer-bg: #eee8d5;
+$sidebar-bg: #eee8d5;
+$main-bg: #fdf6e3;
+$title-color: #586e75;
+$subtitle-color: #93a1a1;
+$text-color: #657b83;
+$text-color-light: #839496;
+$footer-bg-back: linear-gradient($footer-bg, darken($footer-bg, 8));
+
+/* To use the light Solarized highlighting theme uncomment the following line */
+$solarized: dark;
+</code></pre></noscript></div>
+</p>
+
+<p>Happy Hacking!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[chrome frame]]></title>
+    <link href="http://krondor.github.com/blog/2012/02/09/chrome-frame/"/>
+    <updated>2012-02-09T15:27:00-05:00</updated>
+    <id>http://krondor.github.com/blog/2012/02/09/chrome-frame</id>
+    <content type="html"><![CDATA[<p>So having spent some time fumbling around in <a href="http://octopress.org">octopress</a>,
+ I've made my first modification.  Internet Explorer is a constant source of
+ pain when theming websites.  As this is my personal blog there isn't really a
+ reason to be particularly friendly to Internet Explorer, and so I thought why
+ not prompt my visitors to install
+ <a href="http://code.google.com/chrome/chromeframe/">Chrome Frame</a>.</p>
+
+<p>Chrome Frame effectively replaces the rendering engine of IE with Google Chrome
+ through a plugin for IE.  In effect users who install it are now running
+ Chrome, and as such are treated with properly working CSS/HTML5/JS support.
+ Which now means they can see my nicely rendered 3D logo all in CSS courtesy of
+ <a href="%22http://www.markdott.com/2011/01/05/3d-text-using-just-css/">Mark Otto</a>.
+  Wonderful, but how to get my visitors to install Chrome Frame?</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<p>Once Chrome Frame has been installed the user-agent header can report its
+ presence.</p>
+
+<p><code>apache Chrome Frame User-Agent Example
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe/11.0.660.0)
+</code></p>
+
+<p>Given that we can detect if Chrome Frame is installed it's possible to
+ selectively prompt visitors to install it for IE if they haven't done this
+ already.  There's a great guide on the process on the Chromium site
+ <a href="http://www.chromium.org/developers/how-tos/chrome-frame-getting-started">here</a>.
+ However, I didn't want to just go about pasting the scripts snippet into my
+ HTML body here.  I mean that's why I'm using Octopress and not just native HTML
+ right?  Let's programmatically decide if we should push our IE friends toward
+ the Chrome light.</p>
+
+<p>So how to inject the Chrome Frame javascript in Octopress?  Let's begin with a
+ configuration directive to test against in our _config.yml.</p>
+
+<p>``` yml _config.yml chrome frame directive</p>
+
+<h1>Chrome Frame Prompt</h1>
+
+<p>chromeframe: true
+```</p>
+
+<p>Now that we have a clause to test against Octopress can decide on whether or not
+ to build the chrome frame code into the site.  The only piece left was to
+ decide where the code should reside.  Octopress is pretty good at maintaining a
+ custom directory structure for modifications to the base.  It's a good idea to
+ keep that structure so updates to the core are easier to maintain.  Head.html
+ seems to be the logical place for onload scripts to me, so I made my custom
+ changes there.</p>
+
+<p><code>bash chrome frame custom html file location
+/home/myuser/octopress/source/_includes/custom/head.html
+</code></p>
+
+<p>Now I declare when the code should be included given our config.yml directive
+ using <a href="http://liquidmarkup.orgi">Liquid</a> markup syntax with an if
+ block for site.chromeframe.</p>
+
+<p>I paste in the chrome frame installation script from the Chromium example linked
+ above and modify it for my needs, and we're almost good to go. I really didn't
+ change much.  I opted to use overlay mode for the prompt because I'm not quite
+ sure where I'd like to inject it inline.  The only issue with overlay (besides
+ annoyance to my visitors), is that it doesn't seem to work on IE7 and earlier.
+ I insert a <meta> to the head to enable chrome frame for my pages content
+ (this would normally be done in the http server config, but as I don't have
+ access to that...).</p>
+
+<p><code>html meta tag to enable chrome frame
+&lt;meta http-equiv="X-UA-Compatible" content="chrome=1"&gt;
+</code></p>
+
+<p>Giving us the final product of...</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>[final customized head.html with modifications] (head.html)</span> <a href='/downloads/code/head.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>{% if site.chromeframe %}
+</span><span class='line'>  <span class="c">&lt;!--[if IE]&gt;</span>
+</span><span class='line'><span class="c">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;chrome=1&quot;&gt;</span>
+</span><span class='line'><span class="c">    &lt;script type=&quot;text/javascript&quot;</span>
+</span><span class='line'><span class="c">      src=&quot;http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js&quot;&gt;</span>
+</span><span class='line'><span class="c">    &lt;/script&gt;</span>
+</span><span class='line'><span class="c">    &lt;style&gt;</span>
+</span><span class='line'><span class="c">      .chromeFrameInstallDefaultStyle {</span>
+</span><span class='line'><span class="c">        width: 100%</span>
+</span><span class='line'><span class="c">        border: 5px solid blue;</span>
+</span><span class='line'><span class="c">      }</span>
+</span><span class='line'><span class="c">    &lt;/style&gt;</span>
+</span><span class='line'><span class="c">    &lt;script&gt;</span>
+</span><span class='line'><span class="c">      window.attachEvent(&quot;onload&quot;, function() {</span>
+</span><span class='line'><span class="c">        CFInstall.check({</span>
+</span><span class='line'><span class="c">          mode: &quot;overlay&quot;,</span>
+</span><span class='line'><span class="c">        });</span>
+</span><span class='line'><span class="c">      });</span>
+</span><span class='line'><span class="c">    &lt;/script&gt;</span>
+</span><span class='line'><span class="c">  &lt;![endif]--&gt;</span>
+</span><span class='line'>{% endif %}
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>So far so good, now we can deploy and test;</p>
+
+<p><code>ruby build and deploy site changes
+rake generate
+rake deploy
+</code></p>
+
+<p>Success! My IE visitors will now be greeted with an overlay prompt enticing them
+ to install chrome frame.</p>
+
+<p><img src="/images/chrome_frame_overlay.png"></p>
+
+<p>Now if only they'd install it (or even better just get a full Chrome or Firefox
+ browser in the first place).  Most importantly I learned how to control a
+ feature of my site by manipulating _config.yml and custom overrides to the
+ stock templates.  Fun times!</p>
+]]></content>
+  </entry>
+  
+</feed>

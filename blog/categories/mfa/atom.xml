@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mfa | missionpenguin]]></title>
+  <link href="http://krondor.github.com/blog/categories/mfa/atom.xml" rel="self"/>
+  <link href="http://krondor.github.com/"/>
+  <updated>2013-02-15T16:55:49-05:00</updated>
+  <id>http://krondor.github.com/</id>
+  <author>
+    <name><![CDATA[Ryan Kather]]></name>
+    <email><![CDATA[rkather@missionpenguin.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[two factor and lastpass]]></title>
+    <link href="http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass/"/>
+    <updated>2012-05-09T12:43:00-04:00</updated>
+    <id>http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass</id>
+    <content type="html"><![CDATA[<p>You need multi-factor authentication.  Passwords are no longer good enough.</p>
+
+<p><span class='pullquote-right' data-pullquote='You shouldn&#8217;t trust your password.  It has probably been
+ compromised.'>
+How secure is your password?  If we've learned anything over the years on the
+ Internet it's this. You shouldn't trust your password.  It has probably been
+ compromised.  Even if it hasn't, you might as well treat it as such.  These
+ are strong words, but it's not an illogical stance to take.  How good are your
+ password practices?  Do you mix case, use alphanumeric characters, spaces, or
+ symbols?  Is your password over 14 characters long?  Do you change them on a
+ regular basis?  Do you recycle them?  Is it based on a dictionary word or
+ known item from your life?
+</span></p>
+
+<p>Chances are you are not doing at least a few of the points above.  Which is why
+ for years I've been an advocate of password managers.  I'm presently using
+ <a href="http://lastpass.com">LastPass</a>, which is the genesis for this post.  I've
+ used quite a few of these in my day (most recently
+ <a href="http://docs.kde.org/stable/en/kdeutils/kwallet/index.html">kwallet</a>
+ and <a href="http://keepassx.org">KeePassX</a>.  Some are better than others, but almost
+ any is better than nothing.  LastPass, however, has particularly impressed me.
+  So what makes it so special, and how can it help keep us more secure?</p>
+
+<!-- more -->
+
+
+<h2>Why LastPass?</h2>
+
+<p><img class="left" src="/images/LastPassLogo329x40.png"></p>
+
+<p>Like any good password manager, LastPass holds the keys to your life in an
+ encrypted vault.  You manage entries in the vault and lock it with a master
+ password.  The vault can generate random passwords for you and assign those
+ to entries.  This is all par for the course as these things go, and don't
+ necessarily stand out on their own.</p>
+
+<p>So what makes LastPass so good;</p>
+
+<ul>
+<li>Cloud Synchronization</li>
+<li>Client Side Encryption</li>
+<li>Multi-factor Authentication Support</li>
+<li>One Time Use Passwords</li>
+<li>Browser Plugin Support (Chrome/Firefox/Internet Explorer/Opera/Safari/Others)</li>
+<li>Multiple Platform Support (Android/iOS/Linux/OSX/Windows/Others)</li>
+<li>More Than Passwords (Form Data/Notes)</li>
+<li>Price (LastPass is free for use outside of mobile clients)</li>
+<li>Password Sharing with Friends</li>
+<li>Import/Export Utilities</li>
+<li>Phishing Protection</li>
+</ul>
+
+
+<p>In particular, the cloud synchronization has been immense.  Knowing that all my
+ computers can utilize the same password vault, across operating systems and
+ browsers has been huge.  With that in place you no longer need to remember
+ your logins, and with that you can generate random passwords uniquely for all
+ sites.  Now you've compartmentalized your exposure.  If someone were to
+ compromise the account you made on that one blog about snorkeling, you wouldn't
+ be at risk that they could use that same password for your bank.  You've
+ mitigated your risk just in this one act.</p>
+
+<p>So that's great but this online synchronization sounds like it might not be
+ that great an idea.</p>
+
+<h3>Cloud Synchronization</h3>
+
+<p>LastPass syncs your vault to their online service.</p>
+
+<p>That is a scary statement, and immediately had me worried when I saw the
+ service.  How can I trust that their backend is secure?  If it worries you to
+ have your password vault propagated across the Internet, don't worry it means
+ your self preservation instinct is working correctly.  LastPass works around
+ this basic issue of trust through the use of a
+ <a href="http://en.wikipedia.org/wiki/Salted_hash">salted hash</a>.
+ Effectively this means that passwords and form data you populate into your
+ vault, are encrypted client side and only the resultant hash with salt is sent
+ to their online system.  LastPass doesn't know the vault contents of its users
+ only the hashes.</p>
+
+<p>This is an important point because it nullifies one of the biggest issues with
+ password based authentication.  The password storage.  You could be the poster
+ child for security password best practices, and when the website you're
+ visiting gets hacked (and left your password cleartext in their database),
+ your password has been compromised.  This sounds trivial, but you might be
+ surprised <a href="http://www.codinghorror.com/blog/gawker-hack-release-notes.html">how</a>
+ <a href="http://www.reddit.com/comments/usqe/reddits_streak_of_bad_luck_continues/cuugl">many</a>
+ <a href="http://www.itworld.com/security/249460/hacked-microsoft-online-store-saved-passwords-plain-text">popular</a>
+ sites haven't learned their lesson about storing clear text passwords.  I
+ suppose I should also elaborate that the use of a salt is key here.  Even
+ passwords that are hashed are vulnerable to
+ <a href="http://en.wikipedia.org/wiki/Rainbow_table">rainbow tables</a>,
+ and these are increasingly pre-generated for the taking.  The salt nullifies
+ this leaving the stolen password vault only vulnerable to the venerable (and
+ much more time consuming) offline dictionary attack.</p>
+
+<p><blockquote><p>"This thing is secure every way you can imagine. And it's simple,"</p><footer><strong>Steve Gibson,</strong> <cite><a href='http://www.youtube.com/watch?v=r9Q_anb7pwg&amp;feature=player_embedded'>Security Now 256: LastPass Security</a></cite></footer></blockquote></p>
+
+<p>So that's a pretty bold statement, and given the context of the conversation on
+ that linked episode I wouldn't put too much weight in that.  However,  it does
+ seem nice that LastPass has a good level of industry analysis and commenting
+ by security folks.  It's not open source, and that takes away a degree of
+ trust in my mind, but the model does seem sound.</p>
+
+<p>Now I should point out that you can accomplish similar ends with other solutions
+ like KeePassX and Dropbox.  However, there is a level of trust in your
+ synchronization mechanism and an ease of use factor to consider.  Dropbox, in
+ particular, hasn't had a stellar <a href="http://blog.dropbox.com/?p=821">security record</a>.
+ There are other options (some of them <a href="https://www.box.com/">more secure</a>),
+ but with them you may incur costs or complexity which directly impacts the
+ platforms and sync options you have.</p>
+
+<p>I could probably go on, but let's get to the next point.</p>
+
+<h3>Multi-factor authentication</h3>
+
+<p>The security mechanisms in place around your password vault are all well and
+ good, but they're not enough.  The vault can still be attacked, and now that
+ it's online and synchronized between all the computers and mobile devices you
+ won means its <strong>much</strong> more exposed.  In fact, a more likely hacking avenue,
+ might not be a dictionary attack against your vault.  It's easy to become lazy
+ and security can be annoying.  It's a PITA to always have to authenticate to
+ your vault, and it's really easy to check that remember my password button.
+ Sure you've got a password on your workstation, laptop, and phone right?
+ Maybe, it's not the remember my password button, but the keylogger on the
+ malware you didn't know you had?  You've patched <a href="http://www.forbes.com/sites/adriankingsleyhughes/2012/05/06/emergency-flash-update-fixes-security-vulnerability-used-to-hijack-windows-pcs/">
+ flash</a>
+ recently right?</p>
+
+<p>There needs to be another barrier on your online identity, and LastPass has you
+ covered.
+ <a href="http://en.wikipedia.org/wiki/Multi-factor_authentication">Multi-factor authentication</a>
+ provides that second level of authentication to make the system that much
+ harder to compromise.  LastPass has included support for a variety of
+ additional authentication mechanisms.  Yubikey, Google Authenticator, and USB
+ key options exist.  The idea here is that even if your password is compromised
+ attackers would still need to enter the second form of authentication
+ (usually a numeric PIN that changes every 60 seconds), that old adage something
+ you have and something you know.</p>
+
+<p><img src="/images/googleauth_authenticate.png"></p>
+
+<p>Multi-factor can be a pain, but it's an additional piece of mind that puts a
+ significant barrier on your identity theft.  If you look at the most
+ significant hacking targets (government, banking, online game platforms
+ (steam, battle.net)) you'll note a generally strong uptake of multi-factor
+ authentication.  This is because it is quite effective (although that didn't
+ stop the
+ <a href="http://www.schneier.com/blog/archives/2011/08/details_of_the.html">RSA hack</a>,
+ but that's a different discussion).
+ <a href="https://code.google.com/p/google-authenticator/">Mobile authenticators on smartphones</a>,
+ <a href="http://helpdesk.lastpass.com/security-options/sesame-multifactor-authentication-with-a-usb-thumb-drive/">USB keys</a> (<em>premium feature</em>),
+ <a href="http://www.yubico.com/yubikey-neo">NFC</a>, and the like have done a great deal
+ to make this accessible and easy to live with for everyday usage.  A word of
+ caution, you'll note in the screenshot the checkbox to <strong>not require</strong> two
+ factor for this computer.  You can get into the same <em>remember my password</em>
+ quandary with indiscriminate checking of that box.</p>
+
+<p>What's the point of two factor if you disable it?</p>
+
+<h3>Conclusion</h3>
+
+<p><img class="right" src="/images/tryit.jpg"></p>
+
+<p>So I could go on and on about the other nifty things.  Sharing passwords with a
+ friend/spouse/associate without actually giving them the password or access to
+ the vault.  How about, one time use passwords for that time you want to see
+ your vault at Starbucks, but don't trust the computer to not log your
+ keystrokes?  Or how about the on screen keyboard for your password entry
+ (again fighting keyloggers).  Instead, I'll just leave it to this.</p>
+
+<p><strong>LastPass is free and good.  Try it, you'll like it!</strong></p>
+]]></content>
+  </entry>
+  
+</feed>

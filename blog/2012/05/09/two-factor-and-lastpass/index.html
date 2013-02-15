@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>two factor and lastpass - missionpenguin</title>
+  <meta name="author" content="Ryan Kather">
+
+  
+  <meta name="description" content="You need multi-factor authentication. Passwords are no longer good enough. <span class='pullquote-right' data-pullquote='You shouldn&#8217;t trust &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="missionpenguin" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
+    </script>
+    <style>
+      .chromeFrameInstallDefaultStyle {
+        width: 100%
+        border: 5px solid blue;
+      }
+    </style>
+    <script>
+      window.attachEvent("onload", function() {
+        CFInstall.check({
+          mode: "overlay",
+        });
+      });
+    </script>
+  <![endif]-->
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25958242-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">missionpenguin</a></h1>
+  
+    <h2>slowly turning to penguins</h2>
+  
+    <div class="ribbon">
+      <a href="https://github.com/krondor/krondor.github.com/tree/source" rel="me">Fork me on GitHub</a>
+    </div>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:krondor.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="http://about.me/krondor">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Two Factor and Lastpass</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-09T12:43:00-04:00" pubdate data-updated="true">May 9<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>You need multi-factor authentication.  Passwords are no longer good enough.</p>
+
+<p><span class='pullquote-right' data-pullquote='You shouldn&#8217;t trust your password.  It has probably been
+ compromised.'>
+How secure is your password?  If we&#8217;ve learned anything over the years on the
+ Internet it&#8217;s this. You shouldn&#8217;t trust your password.  It has probably been
+ compromised.  Even if it hasn&#8217;t, you might as well treat it as such.  These
+ are strong words, but it&#8217;s not an illogical stance to take.  How good are your
+ password practices?  Do you mix case, use alphanumeric characters, spaces, or
+ symbols?  Is your password over 14 characters long?  Do you change them on a
+ regular basis?  Do you recycle them?  Is it based on a dictionary word or
+ known item from your life?
+</span></p>
+
+<p>Chances are you are not doing at least a few of the points above.  Which is why
+ for years I&#8217;ve been an advocate of password managers.  I&#8217;m presently using
+ <a href="http://lastpass.com">LastPass</a>, which is the genesis for this post.  I&#8217;ve
+ used quite a few of these in my day (most recently
+ <a href="http://docs.kde.org/stable/en/kdeutils/kwallet/index.html">kwallet</a>
+ and <a href="http://keepassx.org">KeePassX</a>.  Some are better than others, but almost
+ any is better than nothing.  LastPass, however, has particularly impressed me.
+  So what makes it so special, and how can it help keep us more secure?</p>
+
+<!-- more -->
+
+
+<h2>Why LastPass?</h2>
+
+<p><img class="left" src="/images/LastPassLogo329x40.png"></p>
+
+<p>Like any good password manager, LastPass holds the keys to your life in an
+ encrypted vault.  You manage entries in the vault and lock it with a master
+ password.  The vault can generate random passwords for you and assign those
+ to entries.  This is all par for the course as these things go, and don&#8217;t
+ necessarily stand out on their own.</p>
+
+<p>So what makes LastPass so good;</p>
+
+<ul>
+<li>Cloud Synchronization</li>
+<li>Client Side Encryption</li>
+<li>Multi-factor Authentication Support</li>
+<li>One Time Use Passwords</li>
+<li>Browser Plugin Support (Chrome/Firefox/Internet Explorer/Opera/Safari/Others)</li>
+<li>Multiple Platform Support (Android/iOS/Linux/OSX/Windows/Others)</li>
+<li>More Than Passwords (Form Data/Notes)</li>
+<li>Price (LastPass is free for use outside of mobile clients)</li>
+<li>Password Sharing with Friends</li>
+<li>Import/Export Utilities</li>
+<li>Phishing Protection</li>
+</ul>
+
+
+<p>In particular, the cloud synchronization has been immense.  Knowing that all my
+ computers can utilize the same password vault, across operating systems and
+ browsers has been huge.  With that in place you no longer need to remember
+ your logins, and with that you can generate random passwords uniquely for all
+ sites.  Now you&#8217;ve compartmentalized your exposure.  If someone were to
+ compromise the account you made on that one blog about snorkeling, you wouldn&#8217;t
+ be at risk that they could use that same password for your bank.  You&#8217;ve
+ mitigated your risk just in this one act.</p>
+
+<p>So that&#8217;s great but this online synchronization sounds like it might not be
+ that great an idea.</p>
+
+<h3>Cloud Synchronization</h3>
+
+<p>LastPass syncs your vault to their online service.</p>
+
+<p>That is a scary statement, and immediately had me worried when I saw the
+ service.  How can I trust that their backend is secure?  If it worries you to
+ have your password vault propagated across the Internet, don&#8217;t worry it means
+ your self preservation instinct is working correctly.  LastPass works around
+ this basic issue of trust through the use of a
+ <a href="http://en.wikipedia.org/wiki/Salted_hash">salted hash</a>.
+ Effectively this means that passwords and form data you populate into your
+ vault, are encrypted client side and only the resultant hash with salt is sent
+ to their online system.  LastPass doesn&#8217;t know the vault contents of its users
+ only the hashes.</p>
+
+<p>This is an important point because it nullifies one of the biggest issues with
+ password based authentication.  The password storage.  You could be the poster
+ child for security password best practices, and when the website you&#8217;re
+ visiting gets hacked (and left your password cleartext in their database),
+ your password has been compromised.  This sounds trivial, but you might be
+ surprised <a href="http://www.codinghorror.com/blog/gawker-hack-release-notes.html">how</a>
+ <a href="http://www.reddit.com/comments/usqe/reddits_streak_of_bad_luck_continues/cuugl">many</a>
+ <a href="http://www.itworld.com/security/249460/hacked-microsoft-online-store-saved-passwords-plain-text">popular</a>
+ sites haven&#8217;t learned their lesson about storing clear text passwords.  I
+ suppose I should also elaborate that the use of a salt is key here.  Even
+ passwords that are hashed are vulnerable to
+ <a href="http://en.wikipedia.org/wiki/Rainbow_table">rainbow tables</a>,
+ and these are increasingly pre-generated for the taking.  The salt nullifies
+ this leaving the stolen password vault only vulnerable to the venerable (and
+ much more time consuming) offline dictionary attack.</p>
+
+<blockquote><p>&#8220;This thing is secure every way you can imagine. And it&#8217;s simple,&#8221;</p><footer><strong>Steve Gibson,</strong> <cite><a href='http://www.youtube.com/watch?v=r9Q_anb7pwg&feature=player_embedded'>Security Now 256: LastPass Security</a></cite></footer></blockquote>
+
+
+<p>So that&#8217;s a pretty bold statement, and given the context of the conversation on
+ that linked episode I wouldn&#8217;t put too much weight in that.  However,  it does
+ seem nice that LastPass has a good level of industry analysis and commenting
+ by security folks.  It&#8217;s not open source, and that takes away a degree of
+ trust in my mind, but the model does seem sound.</p>
+
+<p>Now I should point out that you can accomplish similar ends with other solutions
+ like KeePassX and Dropbox.  However, there is a level of trust in your
+ synchronization mechanism and an ease of use factor to consider.  Dropbox, in
+ particular, hasn&#8217;t had a stellar <a href="http://blog.dropbox.com/?p=821">security record</a>.
+ There are other options (some of them <a href="https://www.box.com/">more secure</a>),
+ but with them you may incur costs or complexity which directly impacts the
+ platforms and sync options you have.</p>
+
+<p>I could probably go on, but let&#8217;s get to the next point.</p>
+
+<h3>Multi-factor authentication</h3>
+
+<p>The security mechanisms in place around your password vault are all well and
+ good, but they&#8217;re not enough.  The vault can still be attacked, and now that
+ it&#8217;s online and synchronized between all the computers and mobile devices you
+ won means its <strong>much</strong> more exposed.  In fact, a more likely hacking avenue,
+ might not be a dictionary attack against your vault.  It&#8217;s easy to become lazy
+ and security can be annoying.  It&#8217;s a PITA to always have to authenticate to
+ your vault, and it&#8217;s really easy to check that remember my password button.
+ Sure you&#8217;ve got a password on your workstation, laptop, and phone right?
+ Maybe, it&#8217;s not the remember my password button, but the keylogger on the
+ malware you didn&#8217;t know you had?  You&#8217;ve patched <a href="http://www.forbes.com/sites/adriankingsleyhughes/2012/05/06/emergency-flash-update-fixes-security-vulnerability-used-to-hijack-windows-pcs/">
+ flash</a>
+ recently right?</p>
+
+<p>There needs to be another barrier on your online identity, and LastPass has you
+ covered.
+ <a href="http://en.wikipedia.org/wiki/Multi-factor_authentication">Multi-factor authentication</a>
+ provides that second level of authentication to make the system that much
+ harder to compromise.  LastPass has included support for a variety of
+ additional authentication mechanisms.  Yubikey, Google Authenticator, and USB
+ key options exist.  The idea here is that even if your password is compromised
+ attackers would still need to enter the second form of authentication
+ (usually a numeric PIN that changes every 60 seconds), that old adage something
+ you have and something you know.</p>
+
+<p><img src="/images/googleauth_authenticate.png"></p>
+
+<p>Multi-factor can be a pain, but it&#8217;s an additional piece of mind that puts a
+ significant barrier on your identity theft.  If you look at the most
+ significant hacking targets (government, banking, online game platforms
+ (steam, battle.net)) you&#8217;ll note a generally strong uptake of multi-factor
+ authentication.  This is because it is quite effective (although that didn&#8217;t
+ stop the
+ <a href="http://www.schneier.com/blog/archives/2011/08/details_of_the.html">RSA hack</a>,
+ but that&#8217;s a different discussion).
+ <a href="https://code.google.com/p/google-authenticator/">Mobile authenticators on smartphones</a>,
+ <a href="http://helpdesk.lastpass.com/security-options/sesame-multifactor-authentication-with-a-usb-thumb-drive/">USB keys</a> (<em>premium feature</em>),
+ <a href="http://www.yubico.com/yubikey-neo">NFC</a>, and the like have done a great deal
+ to make this accessible and easy to live with for everyday usage.  A word of
+ caution, you&#8217;ll note in the screenshot the checkbox to <strong>not require</strong> two
+ factor for this computer.  You can get into the same <em>remember my password</em>
+ quandary with indiscriminate checking of that box.</p>
+
+<p>What&#8217;s the point of two factor if you disable it?</p>
+
+<h3>Conclusion</h3>
+
+<p><img class="right" src="/images/tryit.jpg"></p>
+
+<p>So I could go on and on about the other nifty things.  Sharing passwords with a
+ friend/spouse/associate without actually giving them the password or access to
+ the vault.  How about, one time use passwords for that time you want to see
+ your vault at Starbucks, but don&#8217;t trust the computer to not log your
+ keystrokes?  Or how about the on screen keyboard for your password entry
+ (again fighting keyloggers).  Instead, I&#8217;ll just leave it to this.</p>
+
+<p><strong>LastPass is free and good.  Try it, you&#8217;ll like it!</strong></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ryan Kather</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-09T12:43:00-04:00" pubdate data-updated="true">May 9<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/blog/'>blog</a>, <a class='category' href='/blog/categories/lastpass/'>lastpass</a>, <a class='category' href='/blog/categories/mfa/'>mfa</a>, <a class='category' href='/blog/categories/passwords/'>passwords</a>, <a class='category' href='/blog/categories/security/'>security</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass/" data-via="krondor" data-counturl="http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/05/08/solarized/" title="Previous Post: solarized">&laquo; solarized</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/06/15/vendors-dont-be-a-dick/" title="Next Post: vendors: don't be a dick">vendors: don't be a dick &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<h1>missionpenguin</h1>
+<p>My name is <a href="http://about.me/krondor">Ryan</a>, and I'm a geek. Hence this blog will have geeky topics;<br/></p>
+<p><center>devops, linux, android</br>
+security, cloud, code</br>
+etc...</center></p>
+<p>Oh, and there might be an occasional post about hockey, punk, and non-technical stuff.  I apologize in advance...</p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/15/so-long-it-except-not-really/">So Long IT, Except Not Really</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/15/vendors-dont-be-a-dick/">vendors: don't be a dick</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/09/two-factor-and-lastpass/">two factor and lastpass</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/08/solarized/">solarized</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/09/chrome-frame/">chrome frame</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/110157564326709780111?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/krondor">@krondor</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'krondor',
+            count: 2,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("krondor", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/krondor" class="twitter-follow-button" data-show-count="false">Follow @krondor</a>
+  
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ryan Kather -
+  <span class="credit">
+    Powered by <a href="http://octopress.org">Octopress</a>.
+  </span>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:cc="http://creativecommons.org/ns#" href="http://missionpenguin.com" property="cc:attributionName" rel="cc:attributionURL">Mission Penguin</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'missionpenguin';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass/';
+        var disqus_url = 'http://krondor.github.com/blog/2012/05/09/two-factor-and-lastpass/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

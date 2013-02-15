@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | missionpenguin]]></title>
+  <link href="http://krondor.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://krondor.github.com/"/>
+  <updated>2013-02-15T16:55:49-05:00</updated>
+  <id>http://krondor.github.com/</id>
+  <author>
+    <name><![CDATA[Ryan Kather]]></name>
+    <email><![CDATA[rkather@missionpenguin.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[solarized]]></title>
+    <link href="http://krondor.github.com/blog/2012/05/08/solarized/"/>
+    <updated>2012-05-08T14:30:00-04:00</updated>
+    <id>http://krondor.github.com/blog/2012/05/08/solarized</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/solarize_things.jpg"></p>
+
+<p>This blog is now <strong><a href="http://ethanschoonover.com/solarized">Solarized!</a></strong>.  I made
+ the change today, after having already moved to this color scheme in my shell,
+ editor, etc... I'm really enjoying it on my desktop, so I thought why not the
+ blog?  The color scheme is supposed to help reduce eye strain while maintaining
+ nice contrast of content.  That sounds about right for me, living in this sea of
+ florescent light powered cubicles.</p>
+
+<p>I elected to use the light variant of solarized for the blog content and scheme
+ and use the dark solarized variant for code snippets.  I think it's working out
+ kind of well, but probably needs some tweaks.</p>
+
+<p>The link above has all the gory details, whereas I'll keep this post a short one
+ and just dump out the gist of the color scheme's SASS CSS.</p>
+
+<p><div><script src='https://gist.github.com/2638348.js?file=_colors.scss'></script>
+<noscript><pre><code>$header-bg: #fdf6e3;
+$page-bg:  #002b36;
+$footer-bg: #eee8d5;
+$sidebar-bg: #eee8d5;
+$main-bg: #fdf6e3;
+$title-color: #586e75;
+$subtitle-color: #93a1a1;
+$text-color: #657b83;
+$text-color-light: #839496;
+$footer-bg-back: linear-gradient($footer-bg, darken($footer-bg, 8));
+
+/* To use the light Solarized highlighting theme uncomment the following line */
+$solarized: dark;
+</code></pre></noscript></div>
+</p>
+
+<p>Happy Hacking!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[chrome frame]]></title>
+    <link href="http://krondor.github.com/blog/2012/02/09/chrome-frame/"/>
+    <updated>2012-02-09T15:27:00-05:00</updated>
+    <id>http://krondor.github.com/blog/2012/02/09/chrome-frame</id>
+    <content type="html"><![CDATA[<p>So having spent some time fumbling around in <a href="http://octopress.org">octopress</a>,
+ I've made my first modification.  Internet Explorer is a constant source of
+ pain when theming websites.  As this is my personal blog there isn't really a
+ reason to be particularly friendly to Internet Explorer, and so I thought why
+ not prompt my visitors to install
+ <a href="http://code.google.com/chrome/chromeframe/">Chrome Frame</a>.</p>
+
+<p>Chrome Frame effectively replaces the rendering engine of IE with Google Chrome
+ through a plugin for IE.  In effect users who install it are now running
+ Chrome, and as such are treated with properly working CSS/HTML5/JS support.
+ Which now means they can see my nicely rendered 3D logo all in CSS courtesy of
+ <a href="%22http://www.markdott.com/2011/01/05/3d-text-using-just-css/">Mark Otto</a>.
+  Wonderful, but how to get my visitors to install Chrome Frame?</p>
+
+<!-- more -->
+
+
+<p></p>
+
+<p>Once Chrome Frame has been installed the user-agent header can report its
+ presence.</p>
+
+<p><code>apache Chrome Frame User-Agent Example
+Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe/11.0.660.0)
+</code></p>
+
+<p>Given that we can detect if Chrome Frame is installed it's possible to
+ selectively prompt visitors to install it for IE if they haven't done this
+ already.  There's a great guide on the process on the Chromium site
+ <a href="http://www.chromium.org/developers/how-tos/chrome-frame-getting-started">here</a>.
+ However, I didn't want to just go about pasting the scripts snippet into my
+ HTML body here.  I mean that's why I'm using Octopress and not just native HTML
+ right?  Let's programmatically decide if we should push our IE friends toward
+ the Chrome light.</p>
+
+<p>So how to inject the Chrome Frame javascript in Octopress?  Let's begin with a
+ configuration directive to test against in our _config.yml.</p>
+
+<p>``` yml _config.yml chrome frame directive</p>
+
+<h1>Chrome Frame Prompt</h1>
+
+<p>chromeframe: true
+```</p>
+
+<p>Now that we have a clause to test against Octopress can decide on whether or not
+ to build the chrome frame code into the site.  The only piece left was to
+ decide where the code should reside.  Octopress is pretty good at maintaining a
+ custom directory structure for modifications to the base.  It's a good idea to
+ keep that structure so updates to the core are easier to maintain.  Head.html
+ seems to be the logical place for onload scripts to me, so I made my custom
+ changes there.</p>
+
+<p><code>bash chrome frame custom html file location
+/home/myuser/octopress/source/_includes/custom/head.html
+</code></p>
+
+<p>Now I declare when the code should be included given our config.yml directive
+ using <a href="http://liquidmarkup.orgi">Liquid</a> markup syntax with an if
+ block for site.chromeframe.</p>
+
+<p>I paste in the chrome frame installation script from the Chromium example linked
+ above and modify it for my needs, and we're almost good to go. I really didn't
+ change much.  I opted to use overlay mode for the prompt because I'm not quite
+ sure where I'd like to inject it inline.  The only issue with overlay (besides
+ annoyance to my visitors), is that it doesn't seem to work on IE7 and earlier.
+ I insert a <meta> to the head to enable chrome frame for my pages content
+ (this would normally be done in the http server config, but as I don't have
+ access to that...).</p>
+
+<p><code>html meta tag to enable chrome frame
+&lt;meta http-equiv="X-UA-Compatible" content="chrome=1"&gt;
+</code></p>
+
+<p>Giving us the final product of...</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>[final customized head.html with modifications] (head.html)</span> <a href='/downloads/code/head.html'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!--Fonts from Google&quot;s Web font directory at http://google.com/webfonts --&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>
+</span><span class='line'>{% if site.chromeframe %}
+</span><span class='line'>  <span class="c">&lt;!--[if IE]&gt;</span>
+</span><span class='line'><span class="c">    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;chrome=1&quot;&gt;</span>
+</span><span class='line'><span class="c">    &lt;script type=&quot;text/javascript&quot;</span>
+</span><span class='line'><span class="c">      src=&quot;http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js&quot;&gt;</span>
+</span><span class='line'><span class="c">    &lt;/script&gt;</span>
+</span><span class='line'><span class="c">    &lt;style&gt;</span>
+</span><span class='line'><span class="c">      .chromeFrameInstallDefaultStyle {</span>
+</span><span class='line'><span class="c">        width: 100%</span>
+</span><span class='line'><span class="c">        border: 5px solid blue;</span>
+</span><span class='line'><span class="c">      }</span>
+</span><span class='line'><span class="c">    &lt;/style&gt;</span>
+</span><span class='line'><span class="c">    &lt;script&gt;</span>
+</span><span class='line'><span class="c">      window.attachEvent(&quot;onload&quot;, function() {</span>
+</span><span class='line'><span class="c">        CFInstall.check({</span>
+</span><span class='line'><span class="c">          mode: &quot;overlay&quot;,</span>
+</span><span class='line'><span class="c">        });</span>
+</span><span class='line'><span class="c">      });</span>
+</span><span class='line'><span class="c">    &lt;/script&gt;</span>
+</span><span class='line'><span class="c">  &lt;![endif]--&gt;</span>
+</span><span class='line'>{% endif %}
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>So far so good, now we can deploy and test;</p>
+
+<p><code>ruby build and deploy site changes
+rake generate
+rake deploy
+</code></p>
+
+<p>Success! My IE visitors will now be greeted with an overlay prompt enticing them
+ to install chrome frame.</p>
+
+<p><img src="/images/chrome_frame_overlay.png"></p>
+
+<p>Now if only they'd install it (or even better just get a full Chrome or Firefox
+ browser in the first place).  Most importantly I learned how to control a
+ feature of my site by manipulating _config.yml and custom overrides to the
+ stock templates.  Fun times!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[hello world]]></title>
+    <link href="http://krondor.github.com/blog/2012/02/08/hello-world/"/>
+    <updated>2012-02-08T11:16:00-05:00</updated>
+    <id>http://krondor.github.com/blog/2012/02/08/hello-world</id>
+    <content type="html"><![CDATA[<p>The site is live on <a href="http://octopress.org">Octopress</a>, which I recently moved to
+ from <a href="https://github.com/mojombo/jekyll">Jekyll</a>.  It actually wasn't an easy
+ process, but this was mostly my fault.  Once I realized I had no clue what I
+ was doing with Ruby everything went much smoother.  I'll need to throw a more
+ detailed post on the ordeal and some of my thoughts for moving.  I'm going to
+ avoid a howto because there's already plenty of great examples for it (though
+ I'll be sure to link them).</p>
+
+<p>Hooray for a live blog again.</p>
+]]></content>
+  </entry>
+  
+</feed>

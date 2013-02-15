@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jekyll | missionpenguin]]></title>
+  <link href="http://krondor.github.com/blog/categories/jekyll/atom.xml" rel="self"/>
+  <link href="http://krondor.github.com/"/>
+  <updated>2013-02-15T16:55:49-05:00</updated>
+  <id>http://krondor.github.com/</id>
+  <author>
+    <name><![CDATA[Ryan Kather]]></name>
+    <email><![CDATA[rkather@missionpenguin.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[hello world]]></title>
+    <link href="http://krondor.github.com/blog/2012/02/08/hello-world/"/>
+    <updated>2012-02-08T11:16:00-05:00</updated>
+    <id>http://krondor.github.com/blog/2012/02/08/hello-world</id>
+    <content type="html"><![CDATA[<p>The site is live on <a href="http://octopress.org">Octopress</a>, which I recently moved to
+ from <a href="https://github.com/mojombo/jekyll">Jekyll</a>.  It actually wasn't an easy
+ process, but this was mostly my fault.  Once I realized I had no clue what I
+ was doing with Ruby everything went much smoother.  I'll need to throw a more
+ detailed post on the ordeal and some of my thoughts for moving.  I'm going to
+ avoid a howto because there's already plenty of great examples for it (though
+ I'll be sure to link them).</p>
+
+<p>Hooray for a live blog again.</p>
+]]></content>
+  </entry>
+  
+</feed>

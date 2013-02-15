@@ -1,0 +1,25 @@
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+{% if site.chromeframe %}
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
+    </script>
+    <style>
+      .chromeFrameInstallDefaultStyle {
+        width: 100%
+        border: 5px solid blue;
+      }
+    </style>
+    <script>
+      window.attachEvent("onload", function() {
+        CFInstall.check({
+          mode: "overlay",
+        });
+      });
+    </script>
+  <![endif]-->
+{% endif %}
