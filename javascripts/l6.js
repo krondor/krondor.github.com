@@ -1,2 +1,2 @@
-' + alert('testing');
+data:text/javascript,alert('gotit')
 
