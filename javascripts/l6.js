@@ -1,1 +1,3 @@
-alert("testing js call");
+<script>
+  alert("testing js call");
+</script>
