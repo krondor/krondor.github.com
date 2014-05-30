@@ -1,2 +1,1 @@
-data:text/javascript,alert('gotit')
-
+data:text/javascript;base64,YWxlcnQoMTMzNyk=
